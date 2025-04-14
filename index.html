@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid of Iframes</title>
+  <style>
+    /* Ensure the page has no extra default margins */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Define a container that uses CSS Grid to layout iframes */
+    .grid-container {
+      display: grid;
+      /* Create a grid that will auto-fit as many columns as possible
+         with a minimum width of 200px and a maximum of 1 fractional unit */
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 10px;   /* Space between grid items */
+      padding: 10px;
+    }
+
+    /* Style each iframe within the grid */
+    .grid-container iframe {
+      width: 100%; /* Make each iframe take the full width of its grid cell */
+      height: 600px; /* Set a fixed height; adjust as needed */
+      border: 1px solid #ccc; /* Optional: add a light border around each iframe */
+    }
+  </style>
+</head>
+<body>
+  <!-- The container that holds our grid of iframes -->
+  <div class="grid-container">
+    <!-- Add as many iframes as needed; each iframe is a separate grid item -->
+    <iframe src=https://signal.pinmicro.com/home/312/1/101 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/102 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/103 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/104 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/105 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/106 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/107 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/108 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/109 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <iframe src=https://signal.pinmicro.com/home/312/1/110 width="400" height="300" frameborder="0" allowfullscreen></iframe>
+    <!-- You can keep adding iframes here -->
+  </div>
+</body>
+</html>
